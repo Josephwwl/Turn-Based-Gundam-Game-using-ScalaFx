@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gundam.view.GameController">
+   <children>
+      <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <ImageView fx:id="battlegroundImage" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <effect>
+                        <ColorAdjust contrast="0.25" hue="-0.06" />
+                     </effect>
+                  </ImageView>
+                  <HBox>
+                     <children>
+                        <Pane prefHeight="600.0" prefWidth="450.0">
+                           <children>
+                              <AnchorPane id="Player2" layoutX="-17.0" prefHeight="600.0" prefWidth="450.0">
+                                 <children>
+                                    <ImageView fx:id="gundamImageLeft" fitHeight="400.0" fitWidth="250.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                    <ToolBar layoutX="42.0" layoutY="26.0" style="-fx-background-radius: 10;">
+                                       <items>
+                                          <Label fx:id="gundamNameLeft" text="Freedom Gundam">
+                                             <padding>
+                                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ProgressBar fx:id="hpLeft" prefWidth="200.0" progress="0.73">
+                                             <effect>
+                                                <Reflection />
+                                             </effect></ProgressBar>
+                                          <Label fx:id="hpLeftText" text="24/31">
+                                             <padding>
+                                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </items>
+                                    </ToolBar>
+                                    <GridPane fx:id="gridPaneLeft" alignment="CENTER" layoutX="90.0" layoutY="523.0" stylesheets="@gundamTheme.css">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="move1LeftButton" mnemonicParsing="false" onAction="#handleMove1Left" prefHeight="22.0" prefWidth="90.0" text="Move 1" textAlignment="CENTER" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="move2LeftButton" mnemonicParsing="false" onAction="#handleMove2Left" prefHeight="22.0" prefWidth="90.0" text="Move 2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="move3LeftButton" mnemonicParsing="false" onAction="#handleMove3Left" prefHeight="22.0" prefWidth="90.0" text="Move 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <AnchorPane layoutX="-17.0" prefHeight="600.0" prefWidth="450.0">
+                                 <children>
+                                    <ImageView fx:id="gundamImageRight" fitHeight="400.0" fitWidth="250.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                    <ToolBar layoutX="42.0" layoutY="26.0" style="-fx-background-radius: 10;">
+                                       <items>
+                                          <Label fx:id="gundamNameRight" text="Justice Gundam">
+                                             <padding>
+                                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ProgressBar fx:id="hpRight" prefWidth="200.0" progress="0.5">
+                                             <effect>
+                                                <Reflection />
+                                             </effect></ProgressBar>
+                                          <Label fx:id="hpRightText" text="17/31">
+                                             <padding>
+                                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </items>
+                                    </ToolBar>
+                                    <GridPane fx:id="gridPaneRight" alignment="CENTER" disable="true" layoutX="90.0" layoutY="523.0" stylesheets="@gundamTheme.css">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="move1RightButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleMove1Right" prefHeight="22.0" prefWidth="90.0" text="Move 1" textAlignment="CENTER" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="move2RightButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleMove2Right" prefHeight="22.0" prefWidth="90.0" text="Move 2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="move3RightButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleMove3Right" prefHeight="22.0" prefWidth="90.0" text="Move 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Tahoma" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+      <Text fx:id="consoleText" fill="WHITE" layoutX="26.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" textAlignment="CENTER" wrappingWidth="846.859375">
+         <font>
+            <Font name="Tahoma" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Button fx:id="returnButton" alignment="CENTER" layoutX="360.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="64.0" prefWidth="180.0" text="Return to Main Menu" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

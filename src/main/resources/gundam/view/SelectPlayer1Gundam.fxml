@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gundam.view.SelectPlayer1GundamController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/spaceBg.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="600.0" prefWidth="900.0">
+               <children>
+                  <ImageView fx:id="gundamImageLeft" fitHeight="400.0" fitWidth="250.0" layoutX="58.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../image/FreedomGundam.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="gundamImageRIght" fitHeight="347.0" fitWidth="264.0" layoutX="327.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../image/JusticeGundam.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="gundamImageRIght" fitHeight="387.0" fitWidth="242.0" layoutX="617.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../image/EclipseGundam.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="112.0" layoutY="115.0" text="Freedom Gundam" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="396.0" layoutY="115.0" text="Justice Gundam" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="664.0" layoutY="115.0" text="Eclipse Gundam" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Text fill="WHITE" layoutX="26.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 Select Gundam" textAlignment="CENTER" wrappingWidth="846.859375">
+         <font>
+            <Font name="Tahoma" size="32.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <GridPane layoutX="304.0" layoutY="515.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="confirmButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleConfirm" prefHeight="30.0" prefWidth="130.0" text="Confirm" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ChoiceBox fx:id="gundamChoiceBox" prefHeight="30.0" prefWidth="200.0" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

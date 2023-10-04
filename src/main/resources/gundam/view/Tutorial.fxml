@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="558.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="342.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="285.0" layoutY="20.0" prefHeight="34.0" prefWidth="84.0" text="Fighters">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="11.0" layoutY="67.0" prefHeight="497.0" prefWidth="556.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="217.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="81.66665649414062" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="81.66665649414062" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="210.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/FreedomGundam.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="210.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../image/JusticeGundam.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="210.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../image/EclipseGundam.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="19.0" prefWidth="95.0" text="Freedom" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="102.0" text="Justice" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Eclipse" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Low Attack" textFill="#e60202" GridPane.rowIndex="2" />
+                  <Label text="High Attack" textFill="#1fbc00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="High Attack" textFill="#1fbc00" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="High Crit Damage" textFill="#1fbc00" GridPane.rowIndex="3" />
+                  <Label text="Low Crit Damage" textAlignment="CENTER" textFill="#e60202" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Low Crit Damage" textFill="#e60202" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label prefHeight="17.0" prefWidth="92.0" text="High Crit Rate" textFill="#1fbc00" GridPane.rowIndex="4" />
+                  <Label text="Low Crit Rate" textFill="#e60202" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="High Crit Rate" textFill="#1fbc00" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Freedom is a mobile suit piloted by Kira Yamato. This gundam was created by the Earth Alliance, supposedly used for defense. But Kira was forced to use it to recapture the Justice and Eclipse after the PLANTs stole them." wrappingWidth="153.486328125" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Justice is a mobile suit piloted by Athrun Zala, a member of the PLANTs. He stole this suit from the Earth Alliance and used it to retaliate against the initial attack by the Earth Alliance." wrappingWidth="153.486328125" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Eclipse is a mobile suit piloted by Tatsumi Hori, a member of the PLANTs. He stole this suit from the Earth Alliance and used it to retaliate against the initial attack by the Earth Alliance." wrappingWidth="153.486328125" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="558.0" prefHeight="600.0" prefWidth="342.0">
+         <children>
+            <Label layoutX="116.0" layoutY="20.0" prefHeight="34.0" prefWidth="68.0" text="Moves">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="27.0" layoutY="82.0" prefHeight="188.0" prefWidth="259.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.3333740234375" minWidth="10.0" prefWidth="99.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.6666259765625" minWidth="10.0" prefWidth="183.6666259765625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="55.333343505859375" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="42.33331298828125" minHeight="10.0" prefHeight="39.666656494140625" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Beam Rifle" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Seed Mode" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Deals standard damage" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deals damage with chance to land a critical shot" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Increase gundam stats. Crit damage +0.2, crit rate +0.2" />
+                     </children>
+                  </TextFlow>
+                  <Label text="Beam Saber" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2">
+                     <image>
+                        <Image url="@../image/moveSet.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
